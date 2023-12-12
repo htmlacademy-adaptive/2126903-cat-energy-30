@@ -5,14 +5,27 @@
   <meta charset="UTF-8">
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180.png">
+  <link rel="apple-touch-icon" href="favicons/android-icon-192.png">
+  <link rel="apple-touch-icon" href="favicons/favicon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-logo" href="#">
-      <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy">
+    <a class="main-header__logo main-logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/icons/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
+          srcset="images/icons/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy"
+          width="33" height="38">
+      </picture>
       <img class="main-header__logo-image-text" src="images/icons/logo-mobile-text.svg"
         alt="Текст логотипа сайта Cat Energy">
     </a>

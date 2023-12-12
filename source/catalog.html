@@ -5,14 +5,27 @@
   <meta charset="UTF-8">
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180.png">
+  <link rel="apple-touch-icon" href="favicons/android-icon-192.png">
+  <link rel="apple-touch-icon" href="favicons/favicon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-logo" href="#">
-      <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy">
+    <a class="main-header__logo main-logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/icons/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
+          srcset="images/icons/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy"
+          width="33" height="38">
+      </picture>
       <img class="main-header__logo-image-text" src="images/icons/logo-mobile-text.svg"
         alt="Текст логотипа сайта Cat Energy">
     </a>
@@ -42,7 +55,12 @@
     <section class="card-container">
       <ul class="card-container__card-list">
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy PRO 500 г">
+          <picture>
+            <source width="161" height="172" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-1@1x.png 1x, images/catalog-tablet-1@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-1@1x.png" srcset="images/catalog-mobile-1@2x.png 2x"
+              width="68" height="86" alt="Cat Energy PRO 500 г">
+          </picture>
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -62,8 +80,15 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy PRO 1000 г">
-          <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)"
+              srcset="images/catalog-desktop-2@1x.png 1x, images/catalog-desktop-2@2x.png 2x">
+            <source width="168" height="206" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-2@1x.png 1x, images/catalog-tablet-2@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-2@1x.png" srcset="images/catalog-mobile-2@2x.png 2x"
+              width="84" height="100" alt="Cat Energy PRO 1000 г">
+          </picture>
+          <h3 class=" card__title">Cat Energy PRO 1000 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
               <dd class="card__characteristic">Масса</dd>
@@ -82,7 +107,12 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy PRO 500 г">
+          <picture>
+            <source width="161" height="172" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-3@1x.png 1x, images/catalog-tablet-3@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-3@1x.png" srcset="images/catalog-mobile-3@2x.png 2x"
+              width="68" height="86" alt="Cat Energy PRO 500 г">
+          </picture>
           <h3 class="card__title">Cat Energy PRO 500 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -102,7 +132,14 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy PRO 1000 г">
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)"
+              srcset="images/catalog-desktop-4@1x.png 1x, images/catalog-desktop-4@2x.png 2x">
+            <source width="168" height="200" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-4@1x.png 1x, images/catalog-tablet-4@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-4@1x.png" srcset="images/catalog-mobile-4@2x.png 2x"
+              width="84" height="100" alt="Cat Energy PRO 1000 г">
+          </picture>
           <h3 class="card__title">Cat Energy PRO 1000 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -122,7 +159,12 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy SLIM 500 г">
+          <picture>
+            <source width="161" height="172" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-5@1x.png 1x, images/catalog-tablet-5@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-5@1x.png" srcset="images/catalog-mobile-5@2x.png 2x"
+              width="68" height="86" alt="Cat Energy SLIM 500 г">
+          </picture>
           <h3 class="card__title">Cat Energy SLIM 500 </h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -142,7 +184,14 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy SLIM 1000 г">
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)"
+              srcset="images/catalog-desktop-6@1x.png 1x, images/catalog-desktop-6@2x.png 2x">
+            <source width="168" height="200" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-6@1x.png 1x, images/catalog-tablet-6@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-6@1x.png" srcset="images/catalog-mobile-6@2x.png 2x"
+              width="84" height="100" alt="Cat Energy SLIM 1000 г">
+          </picture>
           <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -162,7 +211,12 @@
         </li>
 
         <li class="card-container__item card">
-          <img class="card__image" src="#" alt="Cat Energy SLIM 500 г">
+          <picture>
+            <source width="161" height="172" type="image/png" media="(min-width: 768px)"
+              srcset="images/catalog-tablet-7@1x.png 1x, images/catalog-tablet-7@2x.png 2x">
+            <img class="card__image" src="images/catalog-mobile-7@1x.png" srcset="images/catalog-mobile-7@2x.png 2x"
+              width="68" height="86" alt="Cat Energy SLIM 500 г">
+          </picture>
           <h3 class="card__title">Cat Energy SLIM 500 г</h3>
           <dl class="card__description-list">
             <div class="card__item">
@@ -180,16 +234,17 @@
           </dl>
           <a class="card__button button card__button--send">Заказать</a>
         </li>
+        <li class="card-container__item card">
+          <h2 class="visually-hidden">Больше товаров</h2>
+          <div class="card__orders-icon-container"></div>
+          <div class="card__orders-description-container">
+            <p class="card__orders-title">Показать еще 100500 товаров</p>
+            <p class="card__orders-description">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <button class="card__orders-button button card__orders-button--open-orders" type="button">Показать
+            все</button>
+        </li>
       </ul>
-    </section>
-    <section class="all-orders">
-      <h2 class="visually-hidden">Больше товаров</h2>
-      <div class="all-orders__icon-container"></div>
-      <div class="all-orders__description-container">
-        <p class="all-orders__title">Показать еще 100500 товаров</p>
-        <p class="all-orders__description">На самом деле вкусов гораздо больше!</p>
-      </div>
-      <button class="all-orders__button button all-orders__button--open-orders" type="button">Показать все</button>
     </section>
     <section class="additional-products">
       <h2>Дополнительные товары</h2>
