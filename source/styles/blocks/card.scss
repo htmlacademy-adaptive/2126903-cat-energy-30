@@ -1,0 +1,36 @@
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.card__item {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black-color;
+}
+
+.card__orders-title {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.card__orders-description {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black-color;
+}
+
+.card__orders-button--open-orders {
+  color: $base-black-color;
+  background-color: $bg-grey-color;
+}

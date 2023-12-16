@@ -1,0 +1,27 @@
+.form__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: $base-black-color;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: $base-black-color;
+  text-transform: uppercase;
+}
+
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__button-text {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  line-height: 16px;
+  color: #000000;
+}
