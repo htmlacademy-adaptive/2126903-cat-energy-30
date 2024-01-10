@@ -17,21 +17,29 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-logo" href="index.html">
+    <a class="main-header__logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
-          srcset="images/icons/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
-          srcset="images/icons/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy"
-          width="33" height="38">
+          srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy" width="33"
+          height="38">
       </picture>
-      <img class="main-header__logo-image-text" src="images/icons/logo-mobile-text.svg"
-        alt="Текст логотипа сайта Cat Energy">
+    </a>
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/logo-cat-energy.svg">
+        <img class="main-header__logo-image" src="images/logo-cat-energy.svg" alt="Логотип сайта Cat Energy" width="101"
+          height="18">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle button-burger button-burger--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle button-close button-close--hidden">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -289,9 +297,11 @@
     <section class="present">
       <h2 class="visually-hidden">Подарок</h2>
       <div class="present__container">
-        <p class="present__text">Закажите все
-          и получите чехол для
-          кота в подарок!</p>
+        <div class="present__decoration-container">
+          <p class="present__text">Закажите все
+            и получите чехол для
+            кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>

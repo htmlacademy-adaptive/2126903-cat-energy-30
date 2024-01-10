@@ -7,4 +7,31 @@
   color: #000000;
 }
 
-.program-description__text {}
+.program-description__item-decorative-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-green-color;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.program-description__item-decorative-container--functional-nutrition {
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+}
+
+.program-description__item-decorative-container--powder {
+  background-image: url("../../images/icons/stack.svg#icon-powder");
+  background-size: 30px 32px;
+}
+
+.program-description__item-decorative-container--food {
+  background-image: url("../../images/icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+}
+
+.program-description__item-decorative-container--time {
+  background-image: url("../../images/icons/stack.svg#icon-watch");
+  background-size: 35px 35px;
+}
