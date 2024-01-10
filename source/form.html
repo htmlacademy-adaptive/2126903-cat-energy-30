@@ -17,21 +17,29 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo main-logo" href="index.html">
+    <a class="main-header__logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
-          srcset="images/icons/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
-          srcset="images/icons/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/icons/logo-mobile.svg" alt="Логотип сайта Cat Energy"
-          width="33" height="38">
+          srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy" width="33"
+          height="38">
       </picture>
-      <img class="main-header__logo-image-text" src="images/icons/logo-mobile-text.svg"
-        alt="Текст логотипа сайта Cat Energy">
+    </a>
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/logo-cat-energy.svg">
+        <img class="main-header__logo-image" src="images/logo-cat-energy.svg" alt="Логотип сайта Cat Energy" width="101"
+          height="18">
+      </picture>
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle button-burger button-burger--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle button-close button-close--hidden">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -75,20 +83,20 @@
           <li class="form__filter-group-item">
             <label class="form__filter-group-control">
               <input class="form__control-input visually-hidden" type="radio" name="product-group" checked>
-              <span class="form__control-mark"></span>
+              <span class="form__control-mark form__control-mark--radio"></span>
               <span class="form__label">Похудение</span>
             </label>
           </li>
           <li class="form__filter-group-item">
             <label class="form__filter-group-control">
-              <input class="form__control-input visually-hidden" type="radio" name="product-group" checked>
-              <span class="form__control-mark"></span>
+              <input class="form__control-input visually-hidden" type="radio" name="product-group">
+              <span class="form__control-mark form__control-mark--radio"></span>
               <span class="form__label">Набор массы</span>
             </label>
           <li class="form__filter-group-item">
             <label class="form__filter-group-control">
-              <input class="form__control-input visually-hidden" type="radio" name="product-group" checked>
-              <span class="form__control-mark"></span>
+              <input class="form__control-input visually-hidden" type="radio" name="product-group">
+              <span class="form__control-mark form__control-mark--radio"></span>
               <span class="form__label">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
@@ -99,12 +107,12 @@
           (владельца кота)</legend>
         <div class="form__contacts-stock">
           <label class="form__label" for="email">E-mail:*</label>
-          <input class="form__input" type="email" name="email" id="email" value="kuklachev@gmail.com"
+          <input class="form__input form__input--email" type="email" name="email" id="email" value="kuklachev@gmail.com"
             placeholder="Введите e-mail">
         </div>
         <div class="form__contacts-stock">
           <label class="form__label" for="tel">Телефон:*</label>
-          <input class="form__input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90"
+          <input class="form__input form__input--tel" type="tel" name="tel" id="tel" value="8 (960) 900-60-90"
             placeholder="Введите телефон">
         </div>
       </fieldset>
@@ -117,34 +125,30 @@
       <fieldset class="form__filter-additionally">
         <ul class="form__filter-group-list">
           <li class="form__filter-group-list-item">
-            <label class="form__filter-additionally-control">
-              <input class="form__filter-additionally-control-input visually-hidden" type="checkbox"
-                name="drinking-water">
-              <span class="form__filter-additionally-control-mark"></span>
+            <label class="form__filter-group-control">
+              <input class="form__control-input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="form__control-mark"></span>
               <span class="form__label">Сахарозаменитель</span>
             </label>
           </li>
           <li class="form__filter-group-list-item">
-            <label class="form__filter-additionally-control">
-              <input class="form__filter-additionally-control-input visually-hidden" type="checkbox"
-                name="drinking-water">
-              <span class="form__filter-additionally-control-mark"></span>
+            <label class="form__filter-group-control">
+              <input class="form__control-input visually-hidden" type="checkbox" name="drinking-water">
+              <span class="form__control-mark"></span>
               <span class="form__label">Питьевая вода</span>
             </label>
           </li>
           <li class="form__filter-group-list-item">
-            <label class="form__filter-additionally-control">
-              <input class="form__filter-additionally-control-input visually-hidden" type="checkbox"
-                name="drinking-water">
-              <span class="form__filter-additionally-control-mark"></span>
+            <label class="form__filter-group-control">
+              <input class="form__control-input visually-hidden" type="checkbox" name="milk">
+              <span class="form__control-mark"></span>
               <span class="form__label">Молоко</span>
             </label>
           </li>
           <li class="form__filter-group-list-item">
-            <label class="form__filter-additionally-control">
-              <input class="form__filter-additionally-control-input visually-hidden" type="checkbox"
-                name="drinking-water">
-              <span class="form__filter-additionally-control-mark"></span>
+            <label class="form__filter-group-control">
+              <input class="form__control-input visually-hidden" type="checkbox" name="vitamins">
+              <span class="form__control-mark"></span>
               <span class="form__label">Витамины</span>
             </label>
           </li>

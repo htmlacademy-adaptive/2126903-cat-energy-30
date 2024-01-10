@@ -14,6 +14,12 @@
   color: $base-black-color;
 }
 
+.card__orders-icon-container {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/icons/stack.svg#icon-plus");
+}
+
 .card__orders-title {
   font-family: "Oswald", sans-serif;
   text-align: center;

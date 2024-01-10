@@ -1,3 +1,36 @@
+.programs__decorative-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $bg-green-color;
+  left: 0;
+  border-radius: 50%;
+}
+
+.programs__decorative-container--first-icon::after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 50px;
+  background-image: url("../../images/icons/stack.svg#icon-slender-cat");
+  background-repeat: no-repeat;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.programs__decorative-container--second-icon::after {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 50px;
+  background-image: url("../../images/icons/stack.svg#icon-mass-cat");
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .programs__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -13,6 +46,8 @@
 }
 
 .programs__link {
+  position: relative;
+  padding-right: 47px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 16px;
@@ -20,4 +55,27 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../../images/icons/stack.svg#icon-right-arrow");
+  background-position: -8px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  transition: 0.3s ease-in-out;
+}
+
+.programs__link:hover::after {
+  background-position: 0;
+}
+
+.programs__link:active {
+  opacity: 0.6;
 }
