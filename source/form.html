@@ -17,43 +17,45 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
-          srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип сайта Cat Energy" width="33"
-          height="38">
-      </picture>
-    </a>
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)"
-          srcset="images/logo-cat-energy.svg">
-        <img class="main-header__logo-image" src="images/logo-cat-energy.svg" alt="Логотип сайта Cat Energy" width="101"
-          height="18">
-      </picture>
-    </a>
-    <nav class="main-header__nav main-nav">
+    <div class="main-header__logo-container">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+            srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
+            srcset="images/logo-tablet.svg">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Cat Energy">
+        </picture>
+      </a>
+      <a class="main-header__logo-text" href="index.html">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)"
+            srcset="images/logo-cat-energy.svg">
+          <img class="main-header__logo-image" src="images/logo-cat-energy.svg" width="101" height="18"
+            alt="Текст сайта Cat Energy">
+        </picture>
+      </a>
+    </div>
+    <!-- Навигации нужно заменить класс main-nav--close на main-nav--open, что бы открыть бургер -->
+    <nav class="main-header__nav main-nav main-nav--open">
       <button class="main-nav__toggle button-burger button-burger--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <button class="main-nav__toggle button-close button-close--hidden">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link main-nav__link--active" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 

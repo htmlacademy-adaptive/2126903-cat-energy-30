@@ -1,10 +1,134 @@
+.program-description__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  padding: 0 20px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    margin-bottom: 45px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    margin-bottom: 69px;
+  }
+}
+
 .program-description__title {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
   font-family: "Oswald", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.program-description__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+
+
+  @media (min-width: $tablet-width) {
+    counter-reset: num;
+    width: 627px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    gap: 77px;
+  }
+}
+
+.program-description__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 247px;
+    min-height: 280px;
+    margin-right: 93px;
+    flex-direction: column;
+    align-items: start;
+    gap: 31px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.program-description__item:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.program-description__item:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.program-description__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 96px;
+    right: 0;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    color: $bg-grey-color;
+    z-index: -1;
+  }
+}
+
+.program-description__item:first-child::after {
+  @media (min-width: $tablet-width) {
+    right: 22px;
+  }
+}
+
+.program-description__text {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .program-description__item-decorative-container {
@@ -14,6 +138,12 @@
   background-color: $bg-green-color;
   background-repeat: no-repeat;
   background-position: center;
+
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .program-description__item-decorative-container--functional-nutrition {

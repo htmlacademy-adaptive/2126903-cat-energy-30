@@ -12,6 +12,9 @@
 }
 
 .button-burger {
+  position: absolute;
+  top: -33px;
+  right: 0;
   width: 24px;
   height: 24px;
   background-image: url("../../images/icons/stack.svg#icon-burger-button");
@@ -21,8 +24,11 @@
 }
 
 .button-close {
-  width: 24px;
-  height: 24px;
+  position: absolute;
+  top: -33px;
+  right: 0;
+  width: 19px;
+  height: 19px;
   background-image: url("../../images/icons/stack.svg#icon-cross");
   background-color: transparent;
   border: none;
