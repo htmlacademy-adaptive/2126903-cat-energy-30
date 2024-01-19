@@ -1,7 +1,28 @@
+.main-catalog__title-container {
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .main-catalog__title {
+  width: 280px;
+  padding: 27px 20px 41px 20px;
+  margin: 0 auto;
+  text-align: left;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   color: #000000;
+
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
 }

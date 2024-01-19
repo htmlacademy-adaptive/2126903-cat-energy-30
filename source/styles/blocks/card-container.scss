@@ -1,0 +1,19 @@
+.card-container {
+  position: relative;
+  width: 100%;
+}
+
+.card-container__card-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
