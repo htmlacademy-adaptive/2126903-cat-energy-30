@@ -1,5 +1,7 @@
 .card {
   border-bottom: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
 
 
   @media (min-width: $tablet-width) {
@@ -32,6 +34,11 @@
     flex-direction: column;
     align-items: center;
     background-color: $bg-grey-color;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 171px;
   }
 }
 
@@ -196,6 +203,8 @@
 }
 
 .card__orders-button--open-orders {
+  padding-left: 39px;
+  padding-right: 39px;
   color: $base-black-color;
   background-color: $bg-grey-color;
 }

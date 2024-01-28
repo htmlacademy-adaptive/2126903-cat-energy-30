@@ -23,6 +23,17 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    margin-top: 65px;
+    margin-bottom: 84px;
     padding: 0 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-top: 74px;
+    padding: 0 110px;
   }
 }
