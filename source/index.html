@@ -70,6 +70,13 @@
       </div>
       <div class="hero__image-container">
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)"
+            srcset="images/index-food-desktop@1x.webp 1x, images/index-food-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)"
+            srcset="images/index-food-tablet@1x.webp 1x, images/index-food-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp"
+            srcset="images/index-food-mobile@1x.webp 1x, images/index-food-mobile@2x.webp 2x">
+
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)"
             srcset="images/index-food-desktop@1x.png 1x, images/index-food-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)"
@@ -172,6 +179,7 @@
                 srcset="images/slider-tablet@1x.webp 1x, images/slider-tablet@2x.webp 2x" width="560" height="512">
               <source type="inage/webp" srcset="images/slider-mobile@1x.webp 1x, images/slider-mobile@2x.webp 2x"
                 width="280" height="256">
+
               <source media="(min-width: 768px)" srcset="images/slider-tablet@1x.png 1x, images/slider-tablet@2x.png 2x"
                 width="560" height="512">
               <img class="living-example__image" src="images/slider-mobile@1x.png"
@@ -180,7 +188,7 @@
             <div class="living-example__range-bar">
               <button class="living-example__range-toggle" type="button" aria-label="Передвижение слайдера">
                 <svg width="40" height="40">
-                  <use xlink:href="../../images/icons/stack.svg#icon-range-toggle"></use>
+                  <use xlink:href="../images/icons/stack.svg#icon-range-toggle"></use>
                 </svg>
               </button>
             </div>
@@ -220,7 +228,7 @@
           <li class="main-footer__item">
             <a class="main-footer__link" href="https://vk.com/htmlacademy">
               <svg class="main-footer__social-icon" width="28" height="22" aria-hidden="true" focusable="false">
-                <use href="../../images/icons/stack.svg#icon-vkontakte"></use>
+                <use href="../images/icons/stack.svg#icon-vkontakte"></use>
               </svg>
             </a>
             <span class="visually-hidden">Мы в Вконтакте</span>
@@ -228,7 +236,7 @@
           <li class="main-footer__item">
             <a class="main-footer__link" href="https://www.youtube.com/user/htmlacademyru">
               <svg class="main-footer__social-icon" width="28" height="22" aria-hidden="true" focusable="false">
-                <use href="../../images/icons/stack.svg#icon-youtube"></use>
+                <use href="../images/icons/stack.svg#icon-youtube"></use>
               </svg>
             </a>
             <span class="visually-hidden">Мы в Ютубе</span>
@@ -236,7 +244,7 @@
           <li class="main-footer__item">
             <a class="main-footer__link" href="https://t.me/htmlacademy">
               <svg class="main-footer__social-icon" width="28" height="22" aria-hidden="true" focusable="false">
-                <use href="../../images/icons/stack.svg#icon-telegram"></use>
+                <use href="../images/icons/stack.svg#icon-telegram"></use>
               </svg>
             </a>
             <span class="visually-hidden">Мы в Телеграме</span>

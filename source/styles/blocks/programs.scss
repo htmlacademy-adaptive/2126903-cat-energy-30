@@ -156,9 +156,10 @@
 }
 
 .programs__title {
+  width: 169px;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: start;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -168,6 +169,7 @@
 
 
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
@@ -175,6 +177,7 @@
 
 
   @media (min-width: $desktop-width) {
+    width: auto;
     margin-bottom: 0;
     font-size: 36px;
     line-height: 36px;
@@ -247,5 +250,5 @@
 }
 
 .programs__link:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }

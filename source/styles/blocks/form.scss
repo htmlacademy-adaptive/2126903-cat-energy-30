@@ -1,10 +1,13 @@
 .form__block-container {
+  padding: 0;
+  margin: 0;
   border: none;
 
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    margin-bottom: 70px;
     padding: 0 110px;
     display: flex;
     align-items: center;
@@ -72,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 70px;
     padding: 0 110px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,6 +104,7 @@
   }
 }
 
+
 .form__input {
   position: relative;
   flex: 1;
@@ -118,8 +123,36 @@
   }
 }
 
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form__input:hover {
+  border-color: #cdcdcd;
+}
+
+.form__input:focus {
+  outline: 2px solid #444444;
+}
+
 .form__input--email {
+  position: relative;
   padding-right: 44px;
+}
+
+.form__input--email::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("");
+  z-index: 5;
 }
 
 .form__input--tel {
@@ -140,6 +173,11 @@
   margin-bottom: 23px;
   border: none;
   border-top: 2px solid $bg-green-color;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .from__input--comments {
@@ -194,6 +232,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: calc(50% - 1220px/2 - 40px);
+    margin-bottom: 76px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 36px;
@@ -283,6 +322,10 @@
   }
 }
 
+.form__filter-group-item--disabled {
+  opacity: 0.3;
+}
+
 .form__filter-group-control {
   position: relative;
   display: flex;
@@ -352,6 +395,10 @@
   border-radius: 50%;
 }
 
+.form__filter-group-item:hover .form__control-mark {
+  border: 1px solid #bababa;
+}
+
 .form__button-container {
   width: 280px;
   margin: 0 auto;
@@ -390,4 +437,12 @@
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+.form__button--send:hover {
+  background-color: #5eaa2f;
+}
+
+.form__button--send:active {
+  color: rgb(255, 255, 255, 0.3);
 }

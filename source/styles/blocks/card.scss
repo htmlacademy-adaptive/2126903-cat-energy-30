@@ -51,6 +51,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 145px;
     background-color: $base-white-color;
+    outline: 1px solid #f2f2f2;
   }
 }
 
@@ -164,6 +165,14 @@
   }
 }
 
+.card__button--send:hover {
+  background-color: #5eaa2f;
+}
+
+.card__button--send:active {
+  color: rgb(255, 255, 255, 0.3);
+}
+
 .card__orders-title {
   margin: 0;
   padding: 0;
@@ -208,3 +217,12 @@
   color: $base-black-color;
   background-color: $bg-grey-color;
 }
+
+.card__orders-button--open-orders:hover {
+  background-color: #ebebeb;
+}
+
+.card__orders-button--open-orders:active {
+  color: rgb(68, 68, 68, 30%);
+}
+

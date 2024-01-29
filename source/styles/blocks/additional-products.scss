@@ -189,7 +189,7 @@
   }
 }
 
-.additional-products__button--to-cart {
+.additional-products__button--to-card {
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     font-size: 16px;
@@ -200,4 +200,12 @@
   @media (min-width: $desktop-width) {
     grid-column: 3/4;
   }
+}
+
+.additional-products__button--to-card:hover {
+  background-color: #5eaa2f;
+}
+
+.additional-products__button--to-card:active {
+  color: rgb(255, 255, 255, 30%);
 }

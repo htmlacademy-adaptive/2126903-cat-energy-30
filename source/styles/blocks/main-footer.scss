@@ -27,6 +27,9 @@
   }
 }
 
+.main-footer__contacts--form {
+  background-color: $bg-grey-color;
+}
 
 .main-footer__container {
   width: 280px;
@@ -93,11 +96,39 @@
 }
 
 .main-footer__map {
+  width: 320px;
+  margin: 0 auto;
   height: 362px;
+  background-image: image-set(
+    url("../../images/map-mobile@1x.webp") type("image/webp") 1x,
+    url("../../images/map-mobile@2x.webp") type("image/webp") 2x,
+    url("../../images/map-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/map-mobile@2x.jpg") type("image/jpg") 2x
+  );
+  background-repeat: no-repeat;
 
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     height: 400px;
+    background-image: image-set(
+      url("../../images/map-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/map-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/map-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../images/map-tablet@2x.jpg") type("image/jpg") 2x
+    );
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+    background-image: image-set(
+      url("../../images/map-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/map-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/map-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/map-desktop@2x.jpg") type("image/jpg") 2x
+    );
   }
 }
 
@@ -132,6 +163,8 @@
 }
 
 .main-footer__logo {
+  text-decoration: none;
+
   @media (min-width: $tablet-width) {
     margin-right: 160px;
   }
@@ -142,11 +175,20 @@
   }
 }
 
+.main-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo:active {
+  opacity: 0.6;
+}
+
 .main-footer__social-list {
   width: 280px;
   margin: 0;
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border-top: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
@@ -171,6 +213,7 @@
 .main-footer__logo-container {
   width: 280px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
@@ -182,5 +225,20 @@
 
 .main-footer__logo-htmlacademy-text {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.main-footer__logo-htmlacademy-text:hover {
+  opacity: 0.6;
+}
+
+.main-footer__logo-htmlacademy-text:active {
+  opacity: 0.3;
+}
+
+.main-footer__logo-htmlacademy {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
 }

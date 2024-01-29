@@ -24,8 +24,9 @@
 }
 
 .main-header__logo-container {
+  position: relative;
   display: flex;
-  align-items: center;
+  align-items: start;
 
 
   @media (min-width: $tablet-width) {
@@ -43,6 +44,9 @@
 
 .main-header__logo {
   margin-right: 56px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
@@ -52,8 +56,16 @@
   }
 }
 
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
 .main-header__logo-text {
-  padding-top: 6px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     margin-right: 94px;
@@ -64,4 +76,12 @@
   @media (min-width: $desktop-width) {
     padding-top: 7px;
   }
+}
+
+.main-header__logo-text:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-text:active {
+  opacity: 0.6;
 }

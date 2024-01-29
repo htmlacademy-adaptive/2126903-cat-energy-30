@@ -1,5 +1,6 @@
 .living-example {
   padding-top: 20px;
+  padding-bottom: 40px;
   background-color: $bg-grey-color;
 
 
@@ -154,17 +155,15 @@
 }
 
 .living-example__description {
-  position: absolute;
   display: block;
   width: 77px;
   margin: 0;
+  margin-top: -8px;
   padding: 0 8px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   background-color: $bg-grey-color;
-  bottom: -15px;
-
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -186,6 +185,7 @@
 
 .living-example__price {
   margin: 0;
+  margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   line-height: 20px;
