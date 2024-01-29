@@ -1,42 +1,228 @@
+.card {
+  border-bottom: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 81px;
+    border: none;
+  }
+}
+
+.card__block-item {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-areas:
+    "image title"
+    "image description-list"
+    "button-send button-send";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding: 0 37px 40px 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-grey-color;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 171px;
+  }
+}
+
+.card__block-item--present {
+  padding-top: 77px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 145px;
+    background-color: $base-white-color;
+    outline: 1px solid #f2f2f2;
+  }
+}
+
+.card__block-item--present::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../../images/icons/stack.svg#icon-plus");
+  background-repeat: no-repeat;
+
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    top: 50px;
+  }
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black-color;
+
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #cdcdcd;
+  }
+}
+
+.card__image-container {
+  width: 140px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-area: image;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: -66px;
+    width: 200px;
+    height: 210px;
+  }
+}
+
 .card__title {
+  width: 76px;
+  margin: 0;
+  padding: 0;
+  grid-area: title;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
   color: #222222;
   text-transform: uppercase;
+
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
-.card__item {
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  color: $base-black-color;
+.card__description-list {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  grid-area: description-list;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
-.card__orders-icon-container {
-  width: 30px;
-  height: 30px;
-  background-image: url("../../images/icons/stack.svg#icon-plus");
+.card__button--send {
+  grid-area: button-send;
+
+
+  @media (min-width: $tablet-width) {
+    align-self: normal;
+  }
+}
+
+.card__button--send:hover {
+  background-color: #5eaa2f;
+}
+
+.card__button--send:active {
+  color: rgb(255, 255, 255, 0.3);
 }
 
 .card__orders-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__orders-description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
   color: $base-black-color;
+
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-bottom: 82px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .card__orders-button--open-orders {
+  padding-left: 39px;
+  padding-right: 39px;
   color: $base-black-color;
   background-color: $bg-grey-color;
 }
+
+.card__orders-button--open-orders:hover {
+  background-color: #ebebeb;
+}
+
+.card__orders-button--open-orders:active {
+  color: rgb(68, 68, 68, 30%);
+}
+
