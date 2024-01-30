@@ -14,6 +14,7 @@
     width: 245px;
     margin: 0;
     padding: 0;
+    display: flex;
   }
 }
 
@@ -22,6 +23,8 @@
   width: 280px;
   min-height: 104px;
   padding-top: 186px;
+  display: flex;
+  justify-content: center;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
     url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/cat-bag-mobile@2x.webp") type("image/webp") 2x,
@@ -37,6 +40,7 @@
     width: 554px;
     min-height: 58px;
     padding: 71px 77px;
+    justify-content: end;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
     url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
     url("../../images/cat-bag-tablet@2x.webp") type("image/webp") 2x,
@@ -48,14 +52,16 @@
 
   @media (min-width: $desktop-width) {
     width: 161px;
-    min-height: 58px;
     padding: 185px 42px 43px 42px;
+    align-items: end;
+    flex: 1;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
     url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
     url("../../images/cat-bag-desktop@2x.webp") type("image/webp") 2x,
     url("../../images/cat-bag-desktop@1x.jpg") type("image/jpg") 1x,
     url("../../images/cat-bag-desktop@2x.jpg") type("image/jpg") 2x
   ),  linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-size: cover;
   }
 }
 
@@ -87,16 +93,8 @@
   }
 }
 
-.present__decoration-container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: end;
-  }
-}
-
 .present__text {
   width: 161px;
-  margin: 0 auto;
   text-align: center;
   font-size: 16px;
   line-height: 20px;

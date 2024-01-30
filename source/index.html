@@ -37,7 +37,7 @@
         </picture>
       </a>
     </div>
-    <!-- Навигации нужно заменить класс main-nav--close на main-nav--open, что бы открыть бургер -->
+    <!-- Навигации нужно заменить класс main-nav(две черточки)close на main-nav(две черточки)open, что бы открыть бургер -->
     <nav class="main-header__nav main-nav main-nav--close">
       <button class="main-nav__toggle button-burger button-burger--hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -256,8 +256,10 @@
               height="20" alt="Текст логотипа HtmlAcademy">
           </a>
           <a class="main-footer__logo-htmlacademy" href="https://htmlacademy.ru/">
-            <img class="main-footer__logo-htmlacademy-image" src="images/logo-html-academy.svg" width="27" height="34"
-              alt="Логотип HtmlAcademy">
+            <svg class="main-footer__logo-htmlacademy-image" width="27" height="34" aria-hidden="true"
+              focusable="false">
+              <use href="../images/icons/stack.svg#logo-html-academy"></use>
+            </svg>
           </a>
         </div>
       </div>

@@ -104,7 +104,6 @@
   }
 }
 
-
 .form__input {
   position: relative;
   flex: 1;
@@ -140,22 +139,42 @@
   outline: 2px solid #444444;
 }
 
+/* Добавить класс error c помощью js полям*/
+
+.error {
+  border: 2px solid #ff8282;
+}
+
 .form__input--email {
   position: relative;
   padding-right: 44px;
 }
 
-.form__input--email::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("");
-  z-index: 5;
+.from__label {
+  &:has(input[type="email"]) {
+    --icon-shape: url("../../images/icons/stack.svg#icon-email");
+  }
+
+  &:has(input[type="tel"]) {
+    --icon-shape: url("../../images/icons/stack.svg#icon-phone");
+  }
+
+  &:has(input:user-invalid) {
+    --icon-color: #ff8282;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    inline-size: 20px;
+    aspect-ratio: 1;
+    background: var(--icon-color, #222222);
+    mask: var(--icon-shape) no-repeat center / cover;
+  }
 }
 
 .form__input--tel {
+  position: relative;
   min-width: 100px;
   padding-right: 44px;
 }
@@ -180,7 +199,7 @@
   }
 }
 
-.from__input--comments {
+.form__input--comments {
   display: block;
   width: 252px;
   height: 122px;

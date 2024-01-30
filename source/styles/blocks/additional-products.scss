@@ -57,7 +57,7 @@
   }
 }
 
-.aditional-products__container {
+.additional-products__container {
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
@@ -65,7 +65,6 @@
     padding: 0 110px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 

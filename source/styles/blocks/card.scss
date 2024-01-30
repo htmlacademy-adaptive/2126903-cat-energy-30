@@ -1,20 +1,19 @@
 .card {
   border-bottom: 1px solid #cdcdcd;
-  display: flex;
-  flex-direction: column;
-
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 81px;
     border: none;
+    background-color: $bg-grey-color;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .card__block-item {
   width: 280px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
   position: relative;
   padding-top: 20px;
   padding-bottom: 25px;
@@ -32,6 +31,7 @@
     padding: 0 37px 40px 37px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     background-color: $bg-grey-color;
   }
@@ -153,6 +153,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    flex: 1 0 auto;
   }
 }
 
@@ -162,6 +163,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: normal;
+    flex: 0 0 auto;
   }
 }
 
@@ -208,6 +210,7 @@
     margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
+    flex: 1 0 auto;
   }
 }
 
@@ -216,6 +219,11 @@
   padding-right: 39px;
   color: $base-black-color;
   background-color: $bg-grey-color;
+
+
+  @media (min-width: $tablet-width) {
+    flex: 0 0 auto;
+  }
 }
 
 .card__orders-button--open-orders:hover {
