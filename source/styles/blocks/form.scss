@@ -139,6 +139,12 @@
   outline: 2px solid #444444;
 }
 
+/* Добавить класс error c помощью js полям*/
+
+.error {
+  border: 2px solid #ff8282;
+}
+
 .form__input--email {
   position: relative;
   padding-right: 44px;
@@ -146,11 +152,11 @@
 
 .from__label {
   &:has(input[type="email"]) {
-    --icon-shape: url("../images/icons/stack.svg#icon-email");
+    --icon-shape: url("../../images/icons/stack.svg#icon-email");
   }
 
   &:has(input[type="tel"]) {
-    --icon-shape: url("../images/icons/stack.svg#icon-tel");
+    --icon-shape: url("../../images/icons/stack.svg#icon-phone");
   }
 
   &:has(input:user-invalid) {
@@ -168,6 +174,7 @@
 }
 
 .form__input--tel {
+  position: relative;
   min-width: 100px;
   padding-right: 44px;
 }
