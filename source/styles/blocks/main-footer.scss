@@ -41,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    padding: 61px 70px;
+    padding: 59px 70px;
     justify-content: space-between;
   }
 
@@ -67,6 +67,7 @@
 
 
   @media (min-width: $tablet-width) {
+    width: 163px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -82,16 +83,23 @@
 
   @media (min-width: $tablet-width) {
     width: 157px;
+    padding-top: 1px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    text-align: left;
   }
 }
 
 .main-footer__adress-text {
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 23px;
+    padding-top: 20px;
   }
 }
 
@@ -143,12 +151,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 62px 30px;
+    padding: 60px 30px;
     flex-direction: row;
     justify-content: start;
     gap: 0;
@@ -157,21 +164,23 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 55px 110px;
-    justify-content: space-between;
+    padding: 70px 110px;
+    justify-content: start;
   }
 }
 
 .main-footer__logo {
   text-decoration: none;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin-right: 160px;
+    margin-bottom: 0;
   }
 
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 416px;
   }
 }
 
@@ -187,7 +196,8 @@
   position: relative;
   width: 132px;
   margin: 0;
-  padding: 20px 0;
+  margin-bottom: 16px;
+  padding: 21px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -196,16 +206,18 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    margin-right: 120px;
+    width: 134px;
+    margin-right: 125px;
+    margin-bottom: 0;
     padding: 0;
     align-items: start;
+    gap: 0;
     border: none;
   }
 
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 379px;
   }
 }
 
@@ -216,7 +228,7 @@
   width: 280px;
   height: 1px;
   background-color: #d9d9d9;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -266,7 +278,7 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 162px;
   }
 }
 
@@ -287,6 +299,7 @@
 .main-footer__logo-htmlacademy {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -2px;
   text-decoration: none;
 }
 

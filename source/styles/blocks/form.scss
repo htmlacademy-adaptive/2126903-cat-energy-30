@@ -84,9 +84,44 @@
 }
 
 .form__contacts-item {
+  position: relative;
   display: flex;
   align-items: start;
   gap: 13px;
+
+  &:has(input[type="email"]) {
+    --icon-shape: url("../../images/icons/stack.svg#icon-email");
+  }
+
+  &:has(input[type="tel"]) {
+    --icon-shape: url("../../images/icons/stack.svg#icon-phone");
+  }
+
+  &:has(input:user-invalid) {
+    --icon-color: #ff8282;
+  }
+
+  &:has(input:focus) {
+    --icon-color: #68b738;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    inline-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    aspect-ratio: 1;
+    background: var(--icon-color, #222222);
+    mask: var(--icon-shape) no-repeat center / cover;
+
+
+    @media (min-width: $desktop-width) {
+      right: 16px;
+    }
+  }
 }
 
 .form__label {
@@ -148,29 +183,6 @@
 .form__input--email {
   position: relative;
   padding-right: 44px;
-}
-
-.from__label {
-  &:has(input[type="email"]) {
-    --icon-shape: url("../../images/icons/stack.svg#icon-email");
-  }
-
-  &:has(input[type="tel"]) {
-    --icon-shape: url("../../images/icons/stack.svg#icon-phone");
-  }
-
-  &:has(input:user-invalid) {
-    --icon-color: #ff8282;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    inline-size: 20px;
-    aspect-ratio: 1;
-    background: var(--icon-color, #222222);
-    mask: var(--icon-shape) no-repeat center / cover;
-  }
 }
 
 .form__input--tel {

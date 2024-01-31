@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Кэт Энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/styles/styles.css" as="style">
+  <link rel="preload" href="/images/index-cat-mobile@2x.jpg" as="image">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180.png">
@@ -63,8 +66,7 @@
     <section class="hero">
       <div class="hero__wrapper">
         <div class="hero__header-container">
-          <h1 class="hero__title">Функциональное
-            питание для котов</h1>
+          <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
         </div>
       </div>
@@ -183,7 +185,8 @@
               <source media="(min-width: 768px)" srcset="images/slider-tablet@1x.png 1x, images/slider-tablet@2x.png 2x"
                 width="560" height="512">
               <img class="living-example__image" src="images/slider-mobile@1x.png"
-                srcset="images/slider-mobile@2x.png 2x" width="280" height="256" alt="Худой и толстый кот">
+                srcset="images/slider-mobile@2x.png 2x" loading="lazy" width="280" height="256"
+                alt="Худой и толстый кот">
             </picture>
             <div class="living-example__range-bar">
               <button class="living-example__range-toggle" type="button" aria-label="Передвижение слайдера">
@@ -203,7 +206,7 @@
     <div class="main-footer__contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="main-footer__container">
-        <p class="main-footer__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="main-footer__title">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="main-footer__adress">ул. Большая
           Конюшенная, д. 19/8
           <span class="main-footer__adress-text">Санкт-Петербург</span>
@@ -218,12 +221,10 @@
     </div>
     <div class="main-footer__info-container">
       <div class="main-footer__block-container">
-        <div class="main-footer__logo-wrapper">
-          <a class="main-footer__logo" href="index.html">
-            <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" alt="Логотип сайта Cat Energy"
-              width="128" height="24">
-          </a>
-        </div>
+        <a class="main-footer__logo" href="index.html">
+          <img class="main-footer__logo-image" src="images/logo-cat-energy.svg" alt="Логотип сайта Cat Energy"
+            width="128" height="24">
+        </a>
         <ul class="main-footer__social-list">
           <li class="main-footer__item">
             <a class="main-footer__link" href="https://vk.com/htmlacademy">

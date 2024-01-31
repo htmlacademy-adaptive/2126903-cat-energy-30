@@ -8,20 +8,20 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
-    margin-bottom: 45px;
+    margin-bottom: 52px;
   }
 
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
-    margin-bottom: 69px;
+    margin-bottom: 29px;
   }
 }
 
 .program-description__title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   text-align: left;
@@ -49,9 +49,10 @@
 
   @media (min-width: $tablet-width) {
     counter-reset: num;
-    width: 627px;
+    width: 630px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0;
   }
 
 
@@ -71,7 +72,8 @@
     position: relative;
     width: 247px;
     min-height: 280px;
-    margin-right: 93px;
+    margin-right: 136px;
+    margin-bottom: 38px;
     flex-direction: column;
     align-items: start;
     gap: 31px;
@@ -89,6 +91,18 @@
   }
 }
 
+.program-description__item:nth-last-child(-n+2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.program-description__item:nth-last-child(-n+4) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .program-description__item:nth-child(4n) {
   @media (min-width: $desktop-width) {
     margin-right: 0;
@@ -101,7 +115,7 @@
     counter-increment: num;
     display: inline-block;
     position: absolute;
-    top: 96px;
+    top: 92px;
     right: 0;
     text-align: center;
     font-family: "Oswald", sans-serif;
@@ -153,7 +167,7 @@
 
 .program-description__item-decorative-container--powder {
   background-image: url("../../images/icons/stack.svg#icon-powder");
-  background-size: 30px 32px;
+  background-size: 28px 32px;
 }
 
 .program-description__item-decorative-container--food {
@@ -163,5 +177,5 @@
 
 .program-description__item-decorative-container--time {
   background-image: url("../../images/icons/stack.svg#icon-watch");
-  background-size: 35px 35px;
+  background-size: 32px 32px;
 }
