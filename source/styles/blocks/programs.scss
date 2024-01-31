@@ -16,7 +16,7 @@
 .programs__list {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -27,13 +27,16 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin-bottom: 45px;
+    margin-top: -5px;
     padding: 0;
+    gap: 30px;
   }
 
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-bottom: 71px;
+    margin-top: 0;
+    margin-bottom: 68px;
     padding: 0 110px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,19 +45,19 @@
 }
 
 .programs__item {
-  padding: 30px 20px 18px 20px;
+  padding: 24px 20px 18px 20px;
   background-color: $bg-grey-color;
 
 
   @media (min-width: $tablet-width) {
     width: 593px;
-    padding: 77px 63px 53px 52px;
+    padding: 77px 63px 57px 52px;
   }
 
 
   @media (min-width: $desktop-width) {
     width: 466px;
-    padding: 41px 52px 55px 52px;
+    padding: 45px 52px 63px 52px;
   }
 }
 
@@ -72,7 +75,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 }
 
@@ -186,7 +189,7 @@
 
 .programs__text {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   padding-bottom: 23px;
   border-bottom: 2px solid #d9d9d9;
   font-family: "Lato", sans-serif;
@@ -206,7 +209,7 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -225,6 +228,7 @@
 
 
   @media (min-width: $tablet-width) {
+    padding-right: 57px;
     font-size: 20px;
     line-height: normal;
   }
@@ -235,7 +239,7 @@
   position: absolute;
   display: block;
   background-image: url("../../images/icons/stack.svg#icon-right-arrow");
-  background-position: -8px;
+  background-position: -3px;
   background-repeat: no-repeat;
   width: 32px;
   height: 10px;

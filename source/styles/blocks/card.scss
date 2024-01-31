@@ -3,10 +3,28 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    margin-bottom: 81px;
     border: none;
     background-color: $bg-grey-color;
     display: flex;
     flex-direction: column;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.card:nth-last-child(-n+2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card:nth-last-child(-n+4) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -28,7 +46,7 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    padding: 0 37px 40px 37px;
+    padding: 0 37px 39px 37px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -43,15 +61,20 @@
 }
 
 .card__block-item--present {
-  padding-top: 77px;
+  padding-top: 79px;
   display: flex;
   flex-direction: column;
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 145px;
+    padding-top: 162px;
     background-color: $base-white-color;
     outline: 1px solid #f2f2f2;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding-top: 152px;
   }
 }
 
@@ -85,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -102,6 +125,17 @@
     height: 1px;
     background: #cdcdcd;
   }
+
+
+  @media (min-width: $desktop-width) {
+    bottom: -7px;
+  }
+}
+
+.card__description {
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
 }
 
 .card__image-container {
@@ -115,31 +149,44 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-top: -66px;
+    margin-top: -70px;
+    margin-bottom: 22px;
     width: 200px;
     height: 210px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
 .card__title {
   width: 76px;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   grid-area: title;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
+  text-align: left;
   color: #222222;
   text-transform: uppercase;
 
 
   @media (min-width: $tablet-width) {
-    width: 120px;
+    width: 135px;
     margin-bottom: 20px;
     font-size: 20px;
+    text-align: center;
     line-height: 24px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 }
 
@@ -152,16 +199,23 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     flex: 1 0 auto;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
 .card__button--send {
   grid-area: button-send;
-
+  text-decoration: none;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     align-self: normal;
     flex: 0 0 auto;
   }
