@@ -27,6 +27,15 @@
   }
 }
 
+.main-footer__contacts--catalog {
+  background-color: $bg-grey-color;
+
+
+  @media (min-width: $desktop-width) {
+    background-color: $base-white-color;
+  }
+}
+
 .main-footer__contacts--form {
   background-color: $bg-grey-color;
 }
