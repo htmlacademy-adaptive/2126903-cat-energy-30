@@ -55,7 +55,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  color: #000000;
+  color: $black-color;
 
 
   @media (min-width: $tablet-width) {
@@ -146,8 +146,8 @@
   text-align: center;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
-  border: 2px solid #cdcdcd;
+  color: $black-color;
+  border: 2px solid $bg-dark-grey;
   border-radius: 4px;
   text-transform: uppercase;
 
@@ -196,7 +196,7 @@
   font-family: "Oswald", sans-serif;
   text-align: center;
   line-height: 20px;
-  color: #000000;
+  color: $black-color;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -262,7 +262,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #666666;
+  background-color: $base-middle-grey;
   border-radius: 2px;
 
 
@@ -305,7 +305,7 @@
   cursor: pointer;
 
   svg {
-    --toggle-color: #666666;
+    --toggle-color: $base-middle-grey;
   }
 }
 

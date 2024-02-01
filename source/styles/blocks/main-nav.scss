@@ -49,6 +49,7 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+    background-color: transparent;
   }
 }
 
@@ -73,7 +74,7 @@
 
 .main-nav__list {
   position: absolute;
-  top: 14px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 320px;
@@ -103,6 +104,7 @@
     width: 478px;
     justify-content: start;
     top: 0;
+    background-color: transparent;
   }
 }
 
@@ -157,14 +159,14 @@
 .main-nav__item-link {
   display: block;
   width: 260px;
-  padding: 22px 30px 24px 30px;
+  padding: 21px 30px 23px 30px;
   text-align: center;
-  border-top: 2px solid #e6e6e6;
+  border-top: 2px solid $special-grey;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black-color;
   text-decoration: none;
 
 

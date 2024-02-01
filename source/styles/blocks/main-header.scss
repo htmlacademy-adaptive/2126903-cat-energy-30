@@ -44,6 +44,17 @@
   }
 }
 
+.main-header__logo-container--form {
+  @media (min-width: $tablet-width) {
+    margin-right: 98px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-right: 540px;
+  }
+}
+
 .main-header__logo {
   margin-right: 56px;
   text-decoration: none;

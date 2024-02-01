@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: $black-color;
 
 
   @media (min-width: $tablet-width) {
@@ -97,7 +97,7 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $bg-dark-grey;
 
 
   @media (min-width: $tablet-width) {
@@ -106,8 +106,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    border-right: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid $bg-dark-grey;
+    border-left: 1px solid $bg-dark-grey;
   }
 
 
@@ -123,16 +123,14 @@
 }
 
 .additional-products__item:first-child {
-  border-top: 1px solid #cdcdcd;
-
-
-  @media (min-width: $tablet-width) {
-    border-top: 1px solid #cdcdcd;
-  }
-
-
   @media (min-width: $desktop-width) {
     padding: 15px 0;
+  }
+}
+
+.additional-products__item:last-child {
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $bg-dark-grey;
   }
 }
 
@@ -144,7 +142,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: #222222;
+  color: $base-light-black;
   text-transform: uppercase;
 
 
@@ -214,7 +212,7 @@
 }
 
 .additional-products__button--to-card:hover {
-  background-color: #5eaa2f;
+  background-color: $bg-dark-green;
 }
 
 .additional-products__button--to-card:active {
