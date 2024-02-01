@@ -60,6 +60,12 @@
   }
 }
 
+.card__block-link {
+  text-align: center;
+  text-decoration: none;
+  grid-area: image;
+}
+
 .card__block-item--present {
   padding-top: 79px;
   display: flex;
@@ -145,7 +151,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  grid-area: image;
 
 
   @media (min-width: $tablet-width) {
@@ -161,12 +166,16 @@
   }
 }
 
+.card__title-link {
+  text-decoration: none;
+  grid-area: title;
+}
+
 .card__title {
   width: 76px;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  grid-area: title;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;

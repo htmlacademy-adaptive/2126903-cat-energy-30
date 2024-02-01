@@ -175,7 +175,7 @@
 
 .form__input::-webkit-outer-spin-button,
 .form__input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .form__input[type="number"] {
@@ -187,13 +187,13 @@
 }
 
 .form__input:focus {
-  outline: 2px solid #444444;
+  outline: 2px solid $base-black-color;
 }
 
 /* Добавить класс error c помощью js полям*/
 
 .error {
-  border: 2px solid #ff8282;
+  border: 2px solid $error-color;
 }
 
 .form__input--email {
@@ -398,6 +398,7 @@
 
 
   @media (min-width: $desktop-width) {
+    width: 514px;
     padding: 25px 28px;
     margin: 0;
     margin-bottom: 0;
@@ -447,6 +448,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
   }
+}
+
+.form__control-input:focus-visible + .form__control-mark {
+  outline: 2px solid $base-black-color;
 }
 
 .form__control-input[type="radio"]:checked + .form__control-mark::before {
