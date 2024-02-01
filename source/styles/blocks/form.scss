@@ -7,24 +7,25 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     padding: 0 110px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 
 .form__container {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   padding: 0 20px;
   border: none;
 
 
   @media (min-width: $tablet-width) {
     width: 628px;
+    margin-bottom: 71px;
     padding: 0 70px;
   }
 
@@ -32,6 +33,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin: 0;
+    margin-right: 79px;
     padding: 0;
   }
 }
@@ -70,6 +72,8 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     padding: 0 70px;
+    margin-bottom: 65px;
+    gap: 20px;
   }
 
 
@@ -114,7 +118,7 @@
     transform: translateY(-50%);
     right: 14px;
     aspect-ratio: 1;
-    background: var(--icon-color, #222222);
+    background: var(--icon-color, $base-light-black);
     mask: var(--icon-shape) no-repeat center / cover;
 
 
@@ -125,7 +129,7 @@
 }
 
 .form__label {
-  padding: 6px 0;
+  padding: 14px 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   color: $base-black-color;
@@ -133,25 +137,37 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 6px 0;
+    padding: 10px 0;
     font-size: 20px;
     line-height: normal;
   }
 }
 
+.form__label--filter-group {
+  padding: 6px 0;
+}
+
+.form__label--additionally {
+  padding: 8px 0;
+}
+
 .form__input {
   position: relative;
   flex: 1;
-  padding: 14px 12px 13px 12px;
+  padding: 14px 13px 13px 15px;
   height: 16px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   color: $base-black-color;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $special-border-grey;
   text-transform: uppercase;
+  resize: none;
 
 
   @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: normal;
   }
@@ -159,36 +175,46 @@
 
 .form__input::-webkit-outer-spin-button,
 .form__input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  appearance: none;
 }
 
 .form__input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .form__input:hover {
-  border-color: #cdcdcd;
+  border-color: $bg-dark-grey;
 }
 
 .form__input:focus {
-  outline: 2px solid #444444;
+  outline: 2px solid $base-black-color;
 }
 
 /* Добавить класс error c помощью js полям*/
 
 .error {
-  border: 2px solid #ff8282;
+  border: 2px solid $error-color;
 }
 
 .form__input--email {
   position: relative;
   padding-right: 44px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .form__input--tel {
   position: relative;
   min-width: 100px;
   padding-right: 44px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .form__contacts {
@@ -201,13 +227,18 @@
 .form__comments {
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   border: none;
   border-top: 2px solid $bg-green-color;
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 64px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 
@@ -242,13 +273,13 @@
 
 .form__title {
   margin-left: calc(50% - 280px/2 - 20px);
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black-color;
 
 
   @media (min-width: $tablet-width) {
@@ -271,21 +302,63 @@
   }
 }
 
+.form__title--contacts {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    padding-bottom: 6px;
+  }
+}
+
+.form__title--comments {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+    padding-bottom: 8px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.form__title--additionally {
+  margin-bottom: 9px;
+  padding-bottom: 8px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    padding-bottom: 8px;
+  }
+}
+
 .form__button-text {
   margin: 0;
   justify-self: start;
   font-family: "Lato", sans-serif;
   text-align: center;
   line-height: 16px;
-  color: #000000;
+  color: $black-color;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-left: -3px;
+    padding-bottom: 4px;
+  }
 }
 
 .form__filter-group {
   padding: 0;
   margin: 0;
+  margin-bottom: 27px;
   border: none;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $light-border-grey;
+  border-bottom: 1px solid $light-border-grey;
 
 
   @media (min-width: $tablet-width) {
@@ -303,14 +376,13 @@
   }
 }
 
-
 .form__filter-group-list {
   width: 280px;
   margin: 0 auto;
   padding: 22px 20px 19px 20px;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 13px;
   list-style: none;
 
 
@@ -320,25 +392,33 @@
     margin-bottom: 65px;
     padding: 27px;
     padding-top: 23px;
-    border: 1px solid #e7e7e7;
+    gap: 11px;
+    border: 1px solid $special-border-grey;
   }
 
 
   @media (min-width: $desktop-width) {
+    width: 514px;
     padding: 25px 28px;
     margin: 0;
+    margin-bottom: 0;
     gap: 13px;
   }
 }
 
 .form__filter-group-list--checkbox {
+  gap: 9px;
+  margin-bottom: 11px;
+
   @media (min-width: $tablet-width) {
     width: 628px;
     margin: 0 auto;
+    margin-bottom: 49px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    row-gap: 27px;
+    column-gap: 60px;
     border: none;
   }
 
@@ -346,10 +426,10 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     padding: 0 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 80px;
   }
 }
 
@@ -368,6 +448,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
   }
+}
+
+.form__control-input:focus-visible + .form__control-mark {
+  outline: 2px solid $base-black-color;
 }
 
 .form__control-input[type="radio"]:checked + .form__control-mark::before {
@@ -412,8 +496,8 @@
   width: 30px;
   height: 30px;
   left: 0;
-  border: 1px solid #cdcdcd;
-  background-color: #ffffff;
+  border: 1px solid $bg-dark-grey;
+  background-color: $base-white-color;
 
 
   @media (min-width: $tablet-width) {
@@ -433,6 +517,7 @@
 .form__button-container {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 33px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -440,18 +525,19 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
+    margin-bottom: 60px;
     padding: 0 70px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 60px;
+    gap: 57px;
     justify-content: start;
   }
 
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-bottom: 49px;
+    margin-bottom: 78px;
     padding: 0 110px;
     gap: 80px;
   }
@@ -471,7 +557,7 @@
 }
 
 .form__button--send:hover {
-  background-color: #5eaa2f;
+  background-color: $bg-dark-green;
 }
 
 .form__button--send:active {

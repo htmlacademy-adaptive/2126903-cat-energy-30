@@ -27,12 +27,15 @@
   padding-top: 186px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
-    url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
-    url("../../images/cat-bag-mobile@2x.webp") type("image/webp") 2x,
-    url("../../images/cat-bag-mobile@1x.jpg") type("image/jpg") 1x,
-    url("../../images/cat-bag-mobile@2x.jpg") type("image/jpg") 2x
-  ),  linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/cat-bag-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/cat-bag-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/cat-bag-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/cat-bag-mobile@2x.jpg") type("image/jpg") 2x
+    ),
+    linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,26 +46,33 @@
     min-height: 58px;
     padding: 71px 77px;
     justify-content: end;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
-    url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
-    url("../../images/cat-bag-tablet@2x.webp") type("image/webp") 2x,
-    url("../../images/cat-bag-tablet@1x.jpg") type("image/jpg") 1x,
-    url("../../images/cat-bag-tablet@2x.jpg") type("image/jpg") 2x
-  ),  linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/cat-bag-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-bag-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-bag-tablet@1x.jpg") type("image/jpg") 1x,
+        url("../../images/cat-bag-tablet@2x.jpg") type("image/jpg") 2x
+      ),
+      linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
   }
 
 
   @media (min-width: $desktop-width) {
     width: 161px;
-    padding: 185px 42px 24px 42px;
-    align-items: end;
+    padding: 170px 42px 26px 42px;
+    align-items: center;
+    justify-content: center;
     flex: 1;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(
-    url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
-    url("../../images/cat-bag-desktop@2x.webp") type("image/webp") 2x,
-    url("../../images/cat-bag-desktop@1x.jpg") type("image/jpg") 1x,
-    url("../../images/cat-bag-desktop@2x.jpg") type("image/jpg") 2x
-  ),  linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/cat-bag-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/cat-bag-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/cat-bag-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/cat-bag-desktop@2x.jpg") type("image/jpg") 2x
+      ),
+      linear-gradient(rgb(76, 74, 79), rgb(76, 74, 79));
     background-size: cover;
   }
 }
@@ -114,6 +124,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
+    padding-right: 0;
     text-align: center;
   }
 }
